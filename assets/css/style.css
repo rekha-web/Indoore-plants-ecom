@@ -19,11 +19,9 @@
 }
 
 body {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "gondgir";
+  font-family: "Poppins", sans-serif;
   line-height: 2;
   color: #ffffff;
-  overflow: hidden;
   background: #e1e1e1;
 }
 h1 {
@@ -196,3 +194,8 @@ i {
 .owl-prev{
   right: 0;
 } */
+
+/* Utility classes */
+.primary-font {
+  font-family: "Gondgir" !important;
+}
