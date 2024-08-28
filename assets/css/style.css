@@ -14,3 +14,17 @@
 .font-gondgir {
   font-family: "Gondgir";
 }
+
+.search-group {
+  position: relative;
+}
+
+.search-group i {
+  position: absolute;
+  right: 8px;
+  bottom: calc(100% / 2 - 10px);
+}
+
+.bdr-dashed{
+  border: 2px dashed;
+}
