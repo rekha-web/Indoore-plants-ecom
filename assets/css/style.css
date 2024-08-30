@@ -2,13 +2,34 @@
 .ratings {
   color: gold;
 }
-
+.ratingstars {
+  display: flex;
+  
+}
 .card-rating {
   justify-content: space-around;
 }
 
 .card-rating p {
   margin: 0;
+}
+#slogan{
+  font-size: 4.5rem;
+  margin-bottom: 360px;
+  text-shadow: black;
+  font-weight: bold;
+}
+#slogan2{
+  font-size: 4rem;
+  margin-bottom:150px;
+  text-shadow: black;
+  font-weight: bold;
+}
+#slogan3{
+  font-size: 4.5rem;
+  margin-bottom: 360px;
+  text-shadow: black;
+  font-weight: bold;
 }
 
 .font-gondgir {

@@ -28,6 +28,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
 
       .darkgreenbg {
@@ -67,7 +68,6 @@
         border: 1.5px solid #666a25 !important;
         overflow: hidden;
       }
-
       .seedsimg {
         border: 1.5px solid #666a25 !important;
         overflow: hidden;
@@ -77,11 +77,11 @@
         border: 1.5px solid #666a25 !important;
         overflow: hidden;
       }
-
       .plantcareimg {
         border: 1.5px solid #666a25 !important;
         overflow: hidden;
       }
+
 
       .greeenerybg {
         background-image: url(assets/img/greenery.jpg);
@@ -233,35 +233,33 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>PLANTS</b></a>
+              <a class="nav-link" href="#multiple-plants"><b>PLANTS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>SEEDS</b></a>
+              <a class="nav-link" href="#seed-section"><b>SEEDS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>PLANTERS AND POTS</b></a>
+              <a class="nav-link" href="#pots&planters"><b>PLANTERS AND POTS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>PLANT CARE</b></a>
+              <a class="nav-link" href="#caring"><b>PLANT CARE</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>OFFERS</b></a>
+              <a class="nav-link" href="#combo-offers"><b>OFFERS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>TRACK YOUR ORDER</b></a>
+              <a class="nav-link" href="#track-order"><b>TRACK YOUR ORDER</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>CUSTOMER SUPPORT</b></a>
+              <a class="nav-link" href="#Contact"><b>CUSTOMER SUPPORT</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>ABOUT US</b></a>
+              <a class="nav-link" href="#about"><b>ABOUT US</b></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- START HERO SECTION /BG_BANNER AND SLIDER -->
-
     <!-- SLIDER -->
     <section>
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -290,17 +288,19 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="assets/img/bg1.png"
+              src="assets/img/bg1.2.jpg"
               class="d-block carouselImg"
               alt="..."
             />
             <div class="carousel-caption">
-              <h1 class="font-gondgir  text-center text-light my-5">Leafy Green's <br>Happy scenes</h1>
+              <h1 class="font-gondgir text-center text-light" id="slogan">
+                Leafy green's <br/>Happy scenes
+              </h1>
               <a href=""
                 ><button
                   class="btn darkbrownbg border-2 border-light rounded-pill text-light"
                 >
-                  <b>Shop Now</b>
+                  <b>More Option</b>
                 </button></a
               >
             </div>
@@ -312,22 +312,24 @@
               alt="..."
             />
             <div class="carousel-caption">
-              <h1 class="font-gondgir">Second slide label</h1>
-              <p>
-                Some representative placeholder content for the second slide.
+              <h1 class="font-gondgir " id="slogan2"> "Breathe Easy, Live Happy"
+              </h1>
+              <p style="font-size: 1.5rem; font-weight: 500;">
+                Indoor plants purify the air, calm the mind, and bring joy to your space. .
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="assets/img/bg3.jpeg"
+              src="assets/img/bg1.1.jpg"
               class="d-block carouselImg"
               alt="..."
             />
             <div class="carousel-caption">
-              <h1 class="font-gondgir">Third slide label</h1>
-              <p>
-                Some representative placeholder content for the third slide.
+              <h1 class="font-gondgir" id="slogan3"> "Nature Inside, Serenity Found"
+              </h1>
+              <p style="font-size: 1.5rem; font-weight: 500;">
+                Bring the outdoors in with our stunning indoor plants.<br> Perfect for urban spaces, our plants promote relaxation, productivity, and a deeper connection to nature.
               </p>
             </div>
           </div>
@@ -471,7 +473,7 @@
     <!-- /SLIDER bottom info -->
 
     <!-- plants -->
-    <section class="plants">
+    <section class="plants" id="multiple-plants">
       <div class="container py-3">
         <h2 class="text-center lightgreentext"><b>PLANTS</b></h2>
         <p class="text-center lightgreentext">
@@ -489,7 +491,7 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Broken Heart</b></h5>
+            <p class="text-center darkgreentext">Broken Heart</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -503,7 +505,7 @@
               </div>
               <p class="text-center darkgreentext">4.6</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 399 - 699</b></h6>
+            <p class="text-center darkgreentext">Rs 399 - 699</p>
           </div>
           <div class="col-md-3">
             <div class="plantimg rounded-5">
@@ -513,7 +515,7 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Boston Compacta</b></h5>
+            <p class="text-center darkgreentext">Boston Compacta</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -526,7 +528,7 @@
               </div>
               <p class="text-center darkgreentext">4.7</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 199 - 499</b></h6>
+            <p class="text-center darkgreentext">Rs 199-499</p>
           </div>
           <div class="col-md-3">
             <div class="plantimg rounded-5">
@@ -536,7 +538,7 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Ixora (Rugmini) </b></h5>
+            <p class="text-center darkgreentext">Ixora (Rugmini)</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -548,7 +550,7 @@
               </div>
               <p class="text-center darkgreentext">5.0</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 499 - 899</b></h6>
+            <p class="text-center darkgreentext">Rs 499 - 899</p>
           </div>
           <div class="col-md-3">
             <div class="plantimg rounded-5">
@@ -558,7 +560,7 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Aloe Vera Mini </b></h5>
+            <p class="text-center darkgreentext">Aloe Vera Mini</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -571,7 +573,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 199 - 599</b></h6>
+            <p class="text-center darkgreentext">Rs 199-599</p>
           </div>
           <div class="col-md-3">
             <div class="plantimg rounded-5">
@@ -581,9 +583,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Variegated Jade Mini </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Variegated Jade Mini
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -596,7 +598,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 399 - 799</b></h6>
+            <p class="text-center darkgreentext">Rs399-799</p>
           </div>
           <div class="col-md-3">
             <div class="plantimg rounded-5">
@@ -606,8 +608,8 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Syngonium Pink </b></h5>
-            <div class="d-flex card-rating">
+            <p class="text-center darkgreentext">Syngonium Pink</p>
+            <div class="d-flex mx-2 card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
@@ -619,8 +621,9 @@
               </div>
               <p class="text-center darkgreentext">4.6</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 199 - 399</b></h6>
+            <p class="text-center darkgreentext">Rs 199 - 399</p>
           </div>
+
           <div class="col-md-3">
             <div class="plantimg rounded-5">
               <img
@@ -629,9 +632,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Golden Hahnii</b></h5>
+            <p class="text-center darkgreentext">Golden Hahnii</p>
             <div class="d-flex card-rating">
-              <div class="ratingstar">
+              <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
@@ -642,8 +645,9 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 299 - 599</b></h6>
+            <p class="text-center darkgreentext">Rs 299 - 599</p>
           </div>
+          
           <div class="col-md-3">
             <div class="plantimg rounded-5">
               <img
@@ -652,7 +656,7 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext"><b>Snake Plant </b></h5>
+            <p class="text-center darkgreentext">Snake Plant</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -665,10 +669,11 @@
               </div>
               <p class="text-center darkgreentext mb-0">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs 299 - 699</b></h6>
+            <p class="text-center darkgreentext">Rs 299 - 699</p>
           </div>
         </div>
-      </div>
+        </div>
+      
       <div class="d-flex justify-content-center mb-4">
         <a href=""
           ><button
@@ -683,7 +688,7 @@
     <!-- /plants -->
 
     <!-- seeds -->
-    <section class="seeds">
+    <section class="seeds" id="seed-section">
       <div class="container py-3">
         <h2 class="text-center lightgreentext"><b>SEEDS</b></h2>
         <p class="text-center lightgreentext">
@@ -693,11 +698,11 @@
           selection of seeds. !
         </p>
         <div class="row px-md-5">
-          <div class="col-md-3">
+   <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed1.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Coleus Seeds</b></h5>
+            <p class="text-center darkgreentext">Coleus Seeds</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -711,13 +716,13 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 35 - 50</b></h6>
+            <p class="text-center darkgreentext">Rs. 35 - 50</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed2.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Aralia Seeds</b></h5>
+            <p class="text-center darkgreentext">Aralia Seeds</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -730,13 +735,13 @@
               </div>
               <p class="text-center darkgreentext">5.0</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 20 - 100</b></h6>
+            <p class="text-center darkgreentext">Rs. 20 - 100</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed3.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Lace Fern Seeds</b></h5>
+            <p class="text-center darkgreentext">Lace Fern Seeds</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -750,15 +755,15 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 40 - 150</b></h6>
+            <p class="text-center darkgreentext">Rs. 40 - 150</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed4.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Brida Creeper Seeds </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Brida Creeper Seeds 
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -771,15 +776,15 @@
               </div>
               <p class="text-center darkgreentext">5.0</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 50 - 150</b></h6>
+            <p class="text-center darkgreentext">Rs. 50 - 150</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed5.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Lemon Eucalyptus Seeds</b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Lemon Eucalyptus Seeds
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -793,13 +798,13 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 70 - 80</b></h6>
+            <p class="text-center darkgreentext">Rs. 70 - 80</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed6.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Aloevera Seeds</b></h5>
+            <p class="text-center darkgreentext">Aloevera Seeds</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -813,13 +818,13 @@
               </div>
               <p class="text-center darkgreentext">4.7</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 30 - 60</b></h6>
+            <p class="text-center darkgreentext">Rs. 30 - 60</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed7.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Wax Bagonia Seeds</b></h5>
+            <p class="text-center darkgreentext">Wax Bagonia Seeds</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -833,13 +838,13 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 20 - 60</b></h6>
+            <p class="text-center darkgreentext">Rs. 20 - 60</p>
           </div>
           <div class="col-md-3">
             <div class="seedsimg rounded-5">
               <img src="assets/img/seeds/seed8.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Foxtail Fern Seeds</b></h5>
+            <p class="text-center darkgreentext">Foxtail Fern Seeds</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -853,7 +858,7 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs. 30 - 50</b></h6>
+            <p class="text-center darkgreentext">Rs. 30 - 50</p>
           </div>
           <div class="d-flex justify-content-center mb-4">
             <a href=""
@@ -871,7 +876,7 @@
     <!-- /seeds -->
 
     <!-- planters & pots -->
-    <section class="planters">
+    <section class="planters" id="pots&planters">
       <div class="container py-3">
         <h2 class="text-center lightgreentext"><b>PLANTERS & POTS</b></h2>
         <p class="text-center lightgreentext">
@@ -885,9 +890,9 @@
             <div class="potimg rounded-5">
               <img src="assets/img/pots/pot1.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Honeycomb Ceramic Pot </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Honeycomb Ceramic Pot 
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -901,13 +906,13 @@
               </div>
               <p class="text-center darkgreentext">4.7</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.399</b></h6>
+            <p class="text-center darkgreentext">Rs.399</p>
           </div>
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/pot2.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Star Ceramic Pot </b></h5>
+            <p class="text-center darkgreentext">Star Ceramic Pot </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -921,14 +926,14 @@
               </div>
               <p class="text-center darkgreentext">4.7</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.299</b></h6>
+            <p class="text-center darkgreentext">Rs.299</p>
           </div>
 
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/pot3.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b> Jar Ceramic Pot</b></h5>
+            <p class="text-center darkgreentext"> Jar Ceramic Pot</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -941,13 +946,13 @@
               </div>
               <p class="text-center darkgreentext">5.0</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.699</b></h6>
+            <p class="text-center darkgreentext">Rs.699</p>
           </div>
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/pot4.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Apple Ceramic Pot </b></h5>
+            <p class="text-center darkgreentext">Apple Ceramic Pot </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -961,15 +966,15 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.799</b></h6>
+            <p class="text-center darkgreentext">Rs.799</p>
           </div>
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/planter1.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Orbit Wooden Planter </b>
-            </h5>
+            <p class="text-center darkgreentext">
+             Orbit Wooden Planter 
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -982,13 +987,13 @@
               </div>
               <p class="text-center darkgreentext">5.0</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.1500</b></h6>
+            <p class="text-center darkgreentext">Rs.1500</p>
           </div>
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/planter2.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext"><b>Hexa Coir Planter</b></h5>
+            <p class="text-center darkgreentext">Hexa Coir Planter</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1002,15 +1007,15 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.1699</b></h6>
+            <p class="text-center darkgreentext">Rs.1699</p>
           </div>
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/planter3.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Lilac Stories Bowl Planter </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Lilac Stories Bowl Planter
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1024,15 +1029,15 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.999</b></h6>
+            <p class="text-center darkgreentext">Rs.999</p>
           </div>
           <div class="col-md-3">
             <div class="potimg rounded-5">
               <img src="assets/img/pots/planter4.png" class="w-100" alt="" />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Immortal Nights Planter </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Immortal Nights Planter
+          </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1046,7 +1051,7 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.2999</b></h6>
+            <p class="text-center darkgreentext">Rs.2999</p>
           </div>
           <div class="d-flex justify-content-center mb-4">
             <a href=""
@@ -1063,7 +1068,7 @@
     <!-- /planters & pots -->
 
     <!-- plant care -->
-    <section class="plant-care">
+    <section class="plant-care" id="caring">
       <div class="container py-3">
         <h2 class="text-center lightgreentext"><b>PLANT CARE</b></h2>
         <p class="text-center lightgreentext">
@@ -1080,9 +1085,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Aroid Potting Mix </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Aroid Potting Mix
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1096,7 +1101,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.999</b></h6>
+            <p class="text-center darkgreentext">Rs.999</p>
           </div>
 
           <div class="col-md-3">
@@ -1107,9 +1112,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Watering </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Watering 
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1123,7 +1128,7 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.1500</b></h6>
+            <p class="text-center darkgreentext">Rs.1500</p>
           </div>
 
           <div class="col-md-3">
@@ -1134,9 +1139,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Microfiber Dusting Gloves</b>
-            </h5>
+            <p class="text-center darkgreentext">
+            Microfiber Dusting Gloves
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1150,7 +1155,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.999</b></h6>
+            <p class="text-center darkgreentext">Rs.999</p>
           </div>
 
           <div class="col-md-3">
@@ -1161,9 +1166,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Organic Bio Insecticide </b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Organic Bio Insecticide
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1177,7 +1182,7 @@
               </div>
               <p class="text-center darkgreentext">5.0</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.3500</b></h6>
+            <p class="text-center darkgreentext">Rs.3500</p>
           </div>
 
           <div class="col-md-3">
@@ -1188,9 +1193,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b> Neem Oil</b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Neem Oil
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1204,7 +1209,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.999</b></h6>
+            <p class="text-center darkgreentext">Rs.999</p>
           </div>
 
           <div class="col-md-3">
@@ -1215,9 +1220,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Soil Care Kit</b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Soil Care Kit
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1231,7 +1236,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.1699</b></h6>
+            <p class="text-center darkgreentext">Rs.1699</p>
           </div>
 
           <div class="col-md-3">
@@ -1242,9 +1247,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Pot & Plant Barrier</b>
-            </h5>
+            <p class="text-center darkpeentext">
+              Pot & Plant Barrier
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1258,7 +1263,7 @@
               </div>
               <p class="text-center darkgreentext">4.8</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.699</b></h6>
+            <p class="text-center darkgreentext">Rs.699</p>
           </div>
 
           <div class="col-md-3">
@@ -1269,9 +1274,9 @@
                 alt=""
               />
             </div>
-            <h5 class="text-center darkgreentext">
-              <b>Plant Fertilizer</b>
-            </h5>
+            <p class="text-center darkgreentext">
+              Plant Fertilizer
+            </p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
@@ -1285,7 +1290,7 @@
               </div>
               <p class="text-center darkgreentext">4.9</p>
             </div>
-            <h6 class="text-center darkgreentext"><b>Rs.999</b></h6>
+            <p class="text-center darkgreentext">Rs.999</p>
           </div>
           <div class="d-flex justify-content-center mb-4">
             <a href=""
@@ -1302,7 +1307,7 @@
     <!-- /plant care -->
 
     <!-- offer -->
-    <section class="salebg">
+    <section class="salebg" id="combo-offers">
       <div class="container py-5">
         <h1 class="font-gondgir text-center text-light my-4">
           <b>Get upto 50% off</b>
@@ -1317,7 +1322,6 @@
               </button></a
             >
           </div>
-          
         </div>
       </div>
     </section>
@@ -1376,7 +1380,11 @@
         </div>
       </div>
       <div class="text-center darkgreenbg rounded-pill px-3 py-2 text-light">
-      <img src="assets/img/offer.png" alt="offer sign" style="width: 25px; height: 25px;">
+        <img
+          src="assets/img/offer.png"
+          alt="offer sign"
+          style="width: 25px; height: 25px"
+        />
         <!-- <i class="fa fa-arrow-left"></i> -->
         Get Free Water Pen on above ₹<strong>999</strong> Use code
         <span class="text-uppercase rounded bdr-dashed px-1">petalixfree</span>
@@ -1394,7 +1402,7 @@
     <!-- /offers -->
 
     <!-- track your order -->
-    <section class="order-track">
+    <section class="order-track" id="track-order">
       <div class="container py-5">
         <h1 class="font-gondgir text-center text-light my-5">
           <b>Track Your Order</b>
@@ -1404,47 +1412,61 @@
     <form class="row g-3 mt-5">
       <div class="col-md-6">
         <label for="input" class="form-label">Invoice ID</label>
-        <input type="text" class="form-control" id="inputnumber" placeholder="Invoice Number">
-      
+        <input
+          type="text"
+          class="form-control"
+          id="inputnumber"
+          placeholder="Invoice Number"
+        />
       </div>
       <div class="col-md-6">
         <label for="input" class="form-label">Order ID</label>
-        <input type="text" class="form-control" id="inputorder" placeholder="Order Tracking Number">
+        <input
+          type="text"
+          class="form-control"
+          id="inputorder"
+          placeholder="Order Tracking Number"
+        />
       </div>
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Contact Number</label>
-        <input type="text" class="form-control" id="inputcontact" placeholder="Enter Contact Number">
+        <input
+          type="text"
+          class="form-control"
+          id="inputcontact"
+          placeholder="Enter Contact Number"
+        />
       </div>
-      </form>
-      <div class="d-flex justify-content-center mt-4">
-        <a href=""
-          ><button
-            class="btn darkgreenbg border-2 border-light rounded-pill text-light"
-          >
-            <b>Check order</b>
-          </button></a
+    </form>
+    <div class="d-flex justify-content-center mt-4">
+      <a href=""
+        ><button
+          class="btn darkgreenbg border-2 border-light rounded-pill text-light"
         >
+          <b>Check order</b>
+        </button></a
+      >
+    </div>
+
+    <!-- /track your order -->
+
+    <!-- customer support -->
+    <section class="support" id="Contact">
+      <div class="container py-5 mt-5">
+        <h1 class="font-gondgir text-center text-light my-5">
+          <b>Customer Support</b>
+        </h1>
       </div>
-        
+    </section>
+    <div class="container">
+      <div class="container py-3 mt-3">
+        <h5 class="text-center darkgreentext">
+          <b>Want to chat or get a call from us ?</b>
+        </h5>
+      </div>
+    </div>
 
-<!-- /track your order -->
-
-<!-- customer support -->
-<section class="support">
-  <div class="container py-5 mt-5">
-    <h1 class="font-gondgir text-center text-light my-5">
-      <b>Customer Support</b>
-    </h1>
-  </div>
-</section>
-<div class="container">
-  <div class="container py-3 mt-3">
-    <h5 class="text-center darkgreentext"><b>Want to chat or get a call from us ?</b></h5>
-  </div>
-  </div>
-
-  
-     <!-- /customer support -->
+    <!-- /customer support -->
     <!-- Footer start------------------------------------------------------ -->
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
       <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
