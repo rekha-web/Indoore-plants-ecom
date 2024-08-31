@@ -1,41 +1,13 @@
 @import url(../fonts/Gondgir/Gondgir\ Regular.css);
-.ratings {
-  color: gold;
-}
-.ratingstars {
-  display: flex;
-  
-}
-.card-rating {
-  justify-content: space-around;
-}
 
-.card-rating p {
+* {
   margin: 0;
-}
-#slogan{
-  font-size: 3rem;
-  text-shadow: black;
-  font-weight: bold;
-
-}
-#slogan2{
-  font-size: 3rem;
-  text-shadow: black;
-  font-weight: bold;
- 
-}
-#slogan3{
-  font-size: 3rem;
-  text-shadow: black;
-  font-weight: bold;
- 
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.1s ease-in-out;
 }
 
-.font-gondgir {
-  font-family: "Gondgir";
-}
-
+/* Navbar start */
 .search-group {
   position: relative;
 }
@@ -45,10 +17,147 @@
   right: 8px;
   bottom: calc(100% / 2 - 10px);
 }
-.search-group i:hover{
-  background-color: #666a25 ;
+.search-group i:hover {
+  background-color: #666a25;
 }
 
-.bdr-dashed{
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite 1s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Navbar end */
+
+.ratingstars {
+  display: flex;
+}
+.card-rating {
+  justify-content: space-around;
+}
+
+.card-rating p {
+  margin: 0;
+}
+
+.slider-slogan {
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(102, 106, 37, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  bottom: 10vh;
+}
+.slider-slogan h1 {
+  font-size: 3rem;
+  text-shadow: black;
+  font-weight: bold;
+}
+
+.bdr-dashed {
   border: 2px dashed;
+}
+
+/* Utility Classes start */
+.ratings {
+  color: gold;
+}
+.font-gondgir {
+  font-family: "Gondgir";
+}
+
+.darkgreenbg {
+  background-color: #666a25 !important;
+}
+
+.darkbrownbg {
+  background-color: #754c24 !important;
+}
+
+.lightgreenbg {
+  background: #7d8035 !important;
+}
+
+.lightgreentext {
+  color: #7d8035 !important;
+}
+
+.darkgreentext {
+  color: #666a25 !important;
+}
+
+.small-text {
+  font-size: 11px;
+}
+
+.large-hide {
+  display: none !important;
+}
+
+.carouselImg {
+  height: 80vh !important;
+  width: max-content;
+}
+
+.plantimg {
+  border: 1.5px solid #666a25 !important;
+  overflow: hidden;
+}
+.seedsimg {
+  border: 1.5px solid #666a25 !important;
+  overflow: hidden;
+}
+
+.potimg {
+  border: 1.5px solid #666a25 !important;
+  overflow: hidden;
+}
+.plantcareimg {
+  border: 1.5px solid #666a25 !important;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .small-screen-text {
+    font-size: 11px;
+  }
+
+  .large-hide {
+    display: block !important;
+  }
+
+  .small-hide {
+    display: none !important;
+  }
+}
+
+/* Utility Classes end */
+
+/* For responsiveness */
+/* widhth 768px, widht 356px and height 640px */
+/* For tablet */
+@media (max-width: 768px) {
+  body {
+    background-color: rgba(128, 0, 128, 0.521);
+  }
+}
+
+/* For mobile */
+@media (max-width: 360px) {
+  body {
+    background-color: orange;
+  }
+  .carouselImg{
+    width: 100% !important;
+    height: auto !important;
+  }
 }
