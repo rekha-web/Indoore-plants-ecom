@@ -45,6 +45,9 @@
   right: 8px;
   bottom: calc(100% / 2 - 10px);
 }
+.search-group i:hover{
+  background-color: #666a25 ;
+}
 
 .bdr-dashed{
   border: 2px dashed;
