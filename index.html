@@ -1,237 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Petalix</title>
-    <!-- FONTAWSOME LINK -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css link -->
-    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="scss/main.css"> -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS STYLE -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        transition: 0.1s ease-in-out;
-      }
 
-      .darkgreenbg {
-        background-color: #666a25 !important;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petalix</title>
+  <!-- FONTAWSOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="scss/main.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .greeenerybg {
+      background-image: url(assets/img/greenery.jpg);
+      background-size: cover;
+    }
 
-      .darkbrownbg {
-        background-color: #754c24 !important;
-      }
+    .salebg {
+      background-image: url(assets/img/salebg.jpg);
+      background-size: cover;
+    }
 
-      .lightgreenbg {
-        background: #7d8035 !important;
-      }
+    .order-track {
+      background-image: url(assets/img/track-order.jpeg);
+      background-size: cover;
+    }
 
-      .lightgreentext {
-        color: #7d8035 !important;
-      }
+    .support {
+      background-image: url(assets/img/customer.png);
+      background-size: cover;
+    }
+  </style>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
 
-      .darkgreentext {
-        color: #666a25 !important;
-      }
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- HEADER TOP-->
 
-      .small-text {
-        font-size: 11px;
-      }
-
-      .large-hide {
-        display: none !important;
-      }
-
-      .carouselImg {
-        height: 80vh !important;
-        width: max-content;
-      }
-
-      .plantimg {
-        border: 1.5px solid #666a25 !important;
-        overflow: hidden;
-      }
-      .seedsimg {
-        border: 1.5px solid #666a25 !important;
-        overflow: hidden;
-      }
-
-      .potimg {
-        border: 1.5px solid #666a25 !important;
-        overflow: hidden;
-      }
-      .plantcareimg {
-        border: 1.5px solid #666a25 !important;
-        overflow: hidden;
-      }
-
-
-      .greeenerybg {
-        background-image: url(assets/img/greenery.jpg);
-        background-size: cover;
-      }
-
-      .salebg {
-        background-image: url(assets/img/salebg.jpg);
-        background-size: cover;
-      }
-
-      .order-track {
-        background-image: url(assets/img/track-order.jpeg);
-        background-size: cover;
-      }
-      .support {
-        background-image: url(assets/img/customer.png);
-        background-size: cover;
-      }
-
-      @media (max-width: 500px) {
-        .small-screen-text {
-          font-size: 11px;
-        }
-
-        .large-hide {
-          display: block !important;
-        }
-
-        .small-hide {
-          display: none !important;
-        }
-      }
-    </style>
-  </head>
-
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
-    <!-- HEADER TOP-->
-    <nav class="top-nav py-2 darkgreenbg">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-4">
-            <p
-              class="announcement-1 mb-0 text-light small-screen-text text-center"
-            >
-              Free Shipping above ₹399 | All India Delivery
-            </p>
-          </div>
-          <div class="col-md-4 small-hide text-center">
-            <p class="announcement-2 mb-0 text-light">
-              <span>Sale live | Shopping Now</span>
-            </p>
-          </div>
-          <div class="col-md-4 small-hide">
-            <p class="announcement-3 mb-0 text-light text-end">
-              <span>Organic Fertilisers to Boost Plant Growth</span>
-            </p>
-          </div>
+  <nav class="top-nav py-2 darkgreenbg d-sm-block d-none">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <p class="announcement-1 mb-0 text-light small-screen-text text-center">
+            Free Shipping above ₹399 | All India Delivery
+          </p>
+        </div>
+        <div class="col-md-4 small-hide text-center">
+          <p class="announcement-2 mb-0 text-light">
+            <span>Sale live | Shopping Now</span>
+          </p>
+        </div>
+        <div class="col-md-4 small-hide">
+          <p class="announcement-3 mb-0 text-light text-end">
+            <span>Organic Fertilisers to Boost Plant Growth</span>
+          </p>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <!-- Header top for smaller screen -->
+  <nav class="top-nav py-2 darkgreenbg d-block d-sm-none">
+    <p class="marquee text-light">
+      <span class="me-5">Free Shipping above ₹399 | All India Delivery </span>
+      <span class="me-5">Sale live | Shopping Now
+      </span>
+      <span class="me-5">Organic Fertilisers to Boost Plant Growth</span>
+    </p>
+  </nav>
+  <!-- MIDDLE NAVBAR -->
+  <nav class="navbar lightgreenbg py-1">
+    <div class="container-fluid px-md-5">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <a class="petalix-logo" href="#">
+        <img src="assets/img/petalix-logo.png" alt="Logo" width="80" />
+      </a>
+      <form class="d-flex px-md-3 small-hide" role="search">
+        <label class="search-group shadow-lg rounded-pill">
+          <input class="form-control me-2 rounded-pill border-0 bg-light" type="search" placeholder="Search"
+            aria-label="Search" />
 
-    <!-- MIDDLE NAVBAR -->
-    <nav class="navbar lightgreenbg py-1">
-      <div class="container-fluid px-md-5">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <a class="petalix-logo" href="#">
-          <img src="assets/img/petalix-logo.png" alt="Logo" width="80" />
-        </a>
-        <form class="d-flex px-md-3 small-hide" role="search">
-          <label class="search-group shadow-lg rounded-pill">
-            <input
-              class="form-control me-2 rounded-pill border-0 bg-light"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+      </form>
 
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </label>
-        </form>
-
-        <div class="col-auto">
-          <div class="d-flex">
-            <a href="#" class="nav-link"
-              ><button class="btn btn-light rounded-circle py-1 lightgreentext">
-                <i class="fa-solid fa-indian-rupee-sign"></i>
-              </button>
-              <p class="small-text text-center text-light mb-0">Reward</p>
-            </a>
-            <a href="#" class="nav-link"
-              ><button
-                class="btn btn-light rounded-circle mx-2 lightgreentext py-1 px-2"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-              <p class="small-text text-center text-light mb-0">Cart</p>
-            </a>
-            <a href="#" class="nav-link"
-              ><button
-                class="btn btn-light rounded-circle lightgreentext py-1 px-2"
-              >
-                <i class="fa-solid fa-user"></i>
-              </button>
-              <p class="small-text text-center text-light mb-0">Sign in</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-md-0 sticky-top">
-      <div class="container-fluid px-2">
-        <div class="large-hide">
-          <form
-            class="d-flex bg-light rounded-pill shadow-lg border px-md-3"
-            role="search"
-          >
-            <input
-              class="form-control me-2 rounded-pill border-0 bg-light"
-              type="search"
-              placeholder="Search flowers, seeds, planters etc.."
-              aria-label="Search flowers, seeds, planters etc.."
-            />
-            <button class="btn rounded-pill text-secondary" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="col-auto">
+        <div class="d-flex">
+          <a href="#" class="nav-link"><button class="btn btn-light rounded-circle py-1 lightgreentext">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
             </button>
-          </form>
+            <p class="small-text text-center text-light mb-0">Reward</p>
+          </a>
+          <a href="#" class="nav-link"><button class="btn btn-light rounded-circle mx-2 lightgreentext py-1 px-2">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <p class="small-text text-center text-light mb-0">Cart</p>
+          </a>
+          <a href="#" class="nav-link"><button class="btn btn-light rounded-circle lightgreentext py-1 px-2">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <p class="small-text text-center text-light mb-0">Sign in</p>
+          </a>
         </div>
-        <button
-          class="navbar-toggler btn-outline-dark btn-sm px-1 shadow-lg"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mb-2 mb-lg-0">
+      </div>
+    </div>
+  </nav>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-md-0 sticky-top" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <div class="large-hide">
+        <form class="d-flex bg-light rounded-pill shadow-lg border px-md-3" role="search">
+          <input class="form-control me-2 rounded-pill border-0 bg-light" type="search"
+            placeholder="Search flowers, seeds, planters etc.." aria-label="Search flowers, seeds, planters etc.." />
+          <button class="btn rounded-pill text-secondary" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <button class="navbar-toggler btn-outline-dark btn-sm px-1 shadow-lg" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><b>HOME</b></a
-              >
+              <a class="nav-link active" aria-current="page" href="#"><b>HOME</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#multiple-plants"><b>PLANTS</b></a>
@@ -257,1303 +163,1107 @@
             <li class="nav-item">
               <a class="nav-link" href="#about"><b>ABOUT US</b></a>
             </li>
+
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- SLIDER -->
-    <section>
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/img/bg1.2.jpg"
-              class="d-block carouselImg"
-              alt="..."
-            />
-            <div class="carousel-caption">
-              <h1 class="font-gondgir text-center text-light" id="slogan">
-                "Leafy green's Happy scenes"
-              </h1>
-              <a href=""
-                ><button
-                  class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-                >
-                  <b>More Option</b>
-                </button></a
-              >
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/bg2.jpg"
-              class="d-block carouselImg"
-              alt="..."
-            />
-            <div class="carousel-caption">
-              <h1 class="font-gondgir " id="slogan2"> "Breathe Easy, Live Happy"
-              </h1>
-              <p style="font-size: 1.5rem; font-weight: 500;">
-                Indoor plants purify the air, calm the mind, and bring joy to your space. .
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/bg1.1.jpg"
-              class="d-block carouselImg"
-              alt="..."
-            />
-            <div class="carousel-caption">
-              <h1 class="font-gondgir" id="slogan3"> "Nature Inside, Serenity Found"
-              </h1>
-              <p style="font-size: 1.5rem; font-weight: 500;">
-                Bring the outdoors in with our stunning indoor plants.<br> Perfect for urban spaces, our plants promote relaxation, productivity, and a deeper connection to nature.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        an<button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    </div>
+  </nav>
+  <!-- SLIDER -->
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-    </section>
-
-    <!-- /SLIDER -->
-
-    <!-- SLIDER bottom info -->
-    <section>
-      <div class="container py-3">
-        <h2 class="text-center lightgreentext">
-          <b>Delivering Plants. Delivering Happiness</b>
-        </h2>
-        <p class="text-center lightgreentext">
-          At Petalix, we believe Plants bring spaces to life & bring life to
-          your spaces. Founded in 2024 , we have a mission to make Beautiful,
-          Healthy & High quality plants accessible to all plant enthusiasts
-          across the country and be a one stop for all their home gardening
-          needs.
-        </p>
-        <div class="row justify-content-center my-3">
-          <div class="col-md-2 col-9">
-            <div class="plantimg rounded-circle">
-              <img
-                src="assets/img/main/best-seller.jpg"
-                class="w-100 rounded-circle"
-                alt=""
-              />
-            </div>
-            <p class="text-center lightgreentext mt-1">Best Sellers</p>
-          </div>
-          <div class="col-md-2 col-9">
-            <div class="plantimg rounded-circle">
-              <img
-                src="assets/img/main/XL-plants.png"
-                class="w-100 rounded-circle"
-                alt=""
-              />
-            </div>
-            <p class="text-center lightgreentext mt-1">XL Plants</p>
-          </div>
-          <div class="col-md-2 col-9">
-            <div class="plantimg rounded-circle">
-              <img
-                src="assets/img/main/ceramic-pots.png"
-                class="w-100 rounded-circle"
-                alt=""
-              />
-            </div>
-            <p class="text-center lightgreentext mt-1">Ceramic Pots</p>
-          </div>
-          <div class="col-md-2 col-9">
-            <div class="plantimg rounded-circle">
-              <img
-                src="assets/img/main/seed.jpg"
-                class="w-100 rounded-circle"
-                alt=""
-              />
-            </div>
-            <p class="text-center lightgreentext mt-1">Seeds</p>
-          </div>
-          <div class="col-md-2 col-9">
-            <div class="plantimg rounded-circle">
-              <img
-                src="assets/img/main/plant-care.jpg"
-                class="w-100 rounded-circle"
-                alt=""
-              />
-            </div>
-            <p class="text-center lightgreentext mt-1">Easy to care</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/bg1.2.jpg" class="d-block carouselImg" alt="..." />
+          <div class="carousel-caption slider-slogan">
+            <h1 class="font-gondgir text-center text-light" id="slogan">
+              "Leafy green's Happy scenes"
+            </h1>
+            <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+                <b>More Option</b>
+              </button></a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- info section -->
-    <section class="greeenerybg">
-      <div class="container py-5">
-        <h1 class="font-gondgir text-center text-light my-4">
-          <b>Select your perfect greenery</b>
-        </h1>
-        <div class="d-flex justify-content-center mb-4">
-          <a href=""
-            ><button
-              class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-            >
-              <b>Explore</b>
-            </button></a
-          >
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container py-3">
-        <div class="row justify-content-center my-3">
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/caretips.png" class="w-50 h-25" alt="" />
-            </div>
-            <p class="text-center lightgreentext mt-1">Care Tips</p>
-          </div>
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/delivery.png" class="w-50 h-25" alt="" />
-            </div>
-            <p class="text-center lightgreentext mt-1">
-              Free Delivery <br />on all orders
+        <div class="carousel-item">
+          <img src="assets/img/bg2.jpg" class="d-block carouselImg" alt="..." />
+          <div class="carousel-caption slider-slogan">
+            <h1 class="font-gondgir " id="slogan2"> "Breathe Easy, Live Happy"
+            </h1>
+            <p style="font-size: 1.5rem; font-weight: 500;">
+              Indoor plants purify the air, calm the mind, and bring joy to your space. .
             </p>
           </div>
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/gurantee.png" class="w-50 h-20" alt="" />
-            </div>
-            <p class="text-center lightgreentext mt-1">
-              45-Day <br />guarantee
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/bg1.1.jpg" class="d-block carouselImg" alt="..." />
+          <div class="carousel-caption slider-slogan">
+            <h1 class="font-gondgir" id="slogan3"> "Nature Inside, Serenity Found"
+            </h1>
+            <p style="font-size: 1.5rem; font-weight: 500;">
+              Bring the outdoors in with our stunning indoor plants.<br> Perfect for urban spaces, our plants promote
+              relaxation, productivity, and a deeper connection to nature.
             </p>
           </div>
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      an<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
-    <!-- /SLIDER bottom info -->
+  <!-- /SLIDER -->
 
-    <!-- plants -->
-    <section class="plants" id="multiple-plants">
-      <div class="container py-3">
-        <h2 class="text-center lightgreentext"><b>PLANTS</b></h2>
-        <p class="text-center lightgreentext">
-          Plants make for the best house companions, suitable for all your moods
-          and every aesthetic. Plantix brings you the widest variety of plants
-          to choose from so you can buy plants online from the comfort of your
-          home!
-        </p>
-        <div class="row px-md-5">
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Broken Heart Plant.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Broken Heart</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.6</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 399 - 699</p>
-          </div>
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Boston Compacta.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Boston Compacta</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.7</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 199-499</p>
-          </div>
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Ixora (Rugmini) Plant - Red.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Ixora (Rugmini)</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">5.0</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 499 - 899</p>
-          </div>
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Aloe Vera Mini Plant.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Aloe Vera Mini</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 199-599</p>
-          </div>
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Variegated Jade Mini Plant.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Variegated Jade Mini
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs399-799</p>
-          </div>
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Syngonium Pink Plant.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Syngonium Pink</p>
-            <div class="d-flex mx-2 card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.6</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 199 - 399</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Snake Plant - Golden Hahnii.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Golden Hahnii</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 299 - 599</p>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="plantimg rounded-5">
-              <img
-                src="assets/img/plants/Snake Plant - Futura Superba.jpg"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">Snake Plant</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext mb-0">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs 299 - 699</p>
-          </div>
-        </div>
-        </div>
-      
-      <div class="d-flex justify-content-center mb-4">
-        <a href=""
-          ><button
-            class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-          >
-            <b>View More</b>
-          </button></a
-        >
-      </div>
-    </section>
-
-    <!-- /plants -->
-
-    <!-- seeds -->
-    <section class="seeds" id="seed-section">
-      <div class="container py-3">
-        <h2 class="text-center lightgreentext"><b>SEEDS</b></h2>
-        <p class="text-center lightgreentext">
-          With high-yielding varieties of , flower seeds with high germination
-          rates, and exotic flower bulbs, Plantix guarantees only the best
-          organic seeds for you ! Elevate your home with our carefully crafted
-          selection of seeds. !
-        </p>
-        <div class="row px-md-5">
-   <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed1.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Coleus Seeds</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 35 - 50</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed2.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Aralia Seeds</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">5.0</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 20 - 100</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed3.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Lace Fern Seeds</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 40 - 150</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed4.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">
-              Brida Creeper Seeds 
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">5.0</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 50 - 150</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed5.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">
-              Lemon Eucalyptus Seeds
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 70 - 80</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed6.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Aloevera Seeds</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.7</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 30 - 60</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed7.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Wax Bagonia Seeds</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 20 - 60</p>
-          </div>
-          <div class="col-md-3">
-            <div class="seedsimg rounded-5">
-              <img src="assets/img/seeds/seed8.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Foxtail Fern Seeds</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs. 30 - 50</p>
-          </div>
-          <div class="d-flex justify-content-center mb-4">
-            <a href=""
-              ><button
-                class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-              >
-                <b>View More</b>
-              </button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- /seeds -->
-
-    <!-- planters & pots -->
-    <section class="planters" id="pots&planters">
-      <div class="container py-3">
-        <h2 class="text-center lightgreentext"><b>PLANTERS & POTS</b></h2>
-        <p class="text-center lightgreentext">
-          Plant pots are the best way to give your plants a safe and happy home,
-          as well as elevate your home decor game. With Plantix’s collection of
-          sleek, elegant, and aesthetic pots and planters, you can give your
-          plants only the best! !
-        </p>
-        <div class="row px-md-5">
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/pot1.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">
-              Honeycomb Ceramic Pot 
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.7</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.399</p>
-          </div>
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/pot2.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Star Ceramic Pot </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.7</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.299</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/pot3.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext"> Jar Ceramic Pot</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">5.0</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.699</p>
-          </div>
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/pot4.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Apple Ceramic Pot </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.799</p>
-          </div>
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/planter1.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">
-             Orbit Wooden Planter 
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">5.0</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.1500</p>
-          </div>
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/planter2.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">Hexa Coir Planter</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.1699</p>
-          </div>
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/planter3.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">
-              Lilac Stories Bowl Planter
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.999</p>
-          </div>
-          <div class="col-md-3">
-            <div class="potimg rounded-5">
-              <img src="assets/img/pots/planter4.png" class="w-100" alt="" />
-            </div>
-            <p class="text-center darkgreentext">
-              Immortal Nights Planter
-          </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.2999</p>
-          </div>
-          <div class="d-flex justify-content-center mb-4">
-            <a href=""
-              ><button
-                class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-              >
-                <b>View More</b>
-              </button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /planters & pots -->
-
-    <!-- plant care -->
-    <section class="plant-care" id="caring">
-      <div class="container py-3">
-        <h2 class="text-center lightgreentext"><b>PLANT CARE</b></h2>
-        <p class="text-center lightgreentext">
-          Feed your plants and help them thrive with our range of organic,
-          sustainable and locally produced indoor plant care products. Plus
-          browse the handiest houseplant care tools & accessories around!
-        </p>
-        <div class="row px-md-5">
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Aroid Potting Mix
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.999</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare2.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Watering 
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.1500</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare3.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-            Microfiber Dusting Gloves
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.999</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare4.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Organic Bio Insecticide
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">5.0</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.3500</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare5.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Neem Oil
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.999</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare6.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Soil Care Kit
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.1699</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare7.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkpeentext">
-              Pot & Plant Barrier
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.8</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.699</p>
-          </div>
-
-          <div class="col-md-3">
-            <div class="plantcareimg rounded-5">
-              <img
-                src="assets/img/plantcare/plantcare8.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <p class="text-center darkgreentext">
-              Plant Fertilizer
-            </p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
-                <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
-                <!-- Rating Stars -->
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <i class="fa fa-star ratings" aria-hidden="true"></i>
-                <!-- half start -->
-                <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
-              </div>
-              <p class="text-center darkgreentext">4.9</p>
-            </div>
-            <p class="text-center darkgreentext">Rs.999</p>
-          </div>
-          <div class="d-flex justify-content-center mb-4">
-            <a href=""
-              ><button
-                class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-              >
-                <b>View More</b>
-              </button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /plant care -->
-
-    <!-- offer -->
-    <section class="salebg" id="combo-offers">
-      <div class="container py-5">
-        <h1 class="font-gondgir text-center text-light my-4">
-          <b>Get upto 70% off</b>
-        </h1>
-        <div class="d-flex justify-content-center mb-5">
-          <div class="d-flex justify-content-center mb-4">
-            <a href=""
-              ><button
-                class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-              >
-                <b>Shop Now</b>
-              </button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- SLIDER bottom info -->
+  <section>
     <div class="container py-3">
-      <h2 class="text-center lightgreentext"><b>OFFERS</b></h2>
+      <h2 class="text-center lightgreentext">
+        <b>Delivering Plants. Delivering Happiness</b>
+      </h2>
+      <p class="text-center lightgreentext">
+        At Petalix, we believe Plants bring spaces to life & bring life to
+        your spaces. Founded in 2024 , we have a mission to make Beautiful,
+        Healthy & High quality plants accessible to all plant enthusiasts
+        across the country and be a one stop for all their home gardening
+        needs.
+      </p>
       <div class="row justify-content-center my-3">
-        <div class="col-md-2 col-9">
+        <div class="col-md-2 col-4">
           <div class="plantimg rounded-circle">
-            <img
-              src="assets/img/offers/seeds.png"
-              class="w-100 rounded-circle"
-              alt=""
-            />
+            <img src="assets/img/main/best-seller.jpg" class="w-100 rounded-circle" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">Best Sellers</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <div class="plantimg rounded-circle">
+            <img src="assets/img/main/XL-plants.png" class="w-100 rounded-circle" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">XL Plants</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <div class="plantimg rounded-circle">
+            <img src="assets/img/main/ceramic-pots.png" class="w-100 rounded-circle" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">Ceramic Pots</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <div class="plantimg rounded-circle">
+            <img src="assets/img/main/seed.jpg" class="w-100 rounded-circle" alt="" />
           </div>
           <p class="text-center lightgreentext mt-1">Seeds</p>
         </div>
-        <div class="col-md-2 col-9">
+        <div class="col-md-2 col-4">
           <div class="plantimg rounded-circle">
-            <img
-              src="assets/img/offers/combo.png"
-              class="w-100 rounded-circle"
-              alt=""
-            />
+            <img src="assets/img/main/plant-care.jpg" class="w-100 rounded-circle" alt="" />
           </div>
-          <p class="text-center lightgreentext mt-1">Combo</p>
+          <p class="text-center lightgreentext mt-1">Easy to care</p>
         </div>
-        <div class="col-md-2 col-9">
-          <div class="plantimg rounded-circle">
-            <img
-              src="assets/img/offers/succulents.png"
-              class="w-100 rounded-circle"
-              alt=""
-            />
-          </div>
-          <p class="text-center lightgreentext mt-1">Succulents</p>
-        </div>
-        <div class="col-md-2 col-9">
-          <div class="plantimg rounded-circle">
-            <img
-              src="assets/img/offers/low light.png"
-              class="w-100 rounded-circle"
-              alt=""
-            />
-          </div>
-          <p class="text-center lightgreentext mt-1">Low Light</p>
-        </div>
-        <div class="col-md-2 col-9">
-          <div class="plantimg rounded-circle">
-            <img
-              src="assets/img/offers/airpurifier.jpeg"
-              class="w-100 rounded-circle"
-              alt=""
-            />
-          </div>
-          <p class="text-center lightgreentext mt-1">Air Purifying</p>
-        </div>
-      </div>
-      <div class="text-center darkgreenbg rounded-pill px-3 py-2 text-light">
-        <img
-          src="assets/img/offer.png"
-          alt="offer sign"
-          style="width: 25px; height: 25px"
-        />
-        <!-- <i class="fa fa-arrow-left"></i> -->
-        Get Free Water Pen on above ₹<strong>999</strong> Use code
-        <span class="text-uppercase rounded bdr-dashed px-1">petalixfree</span>
       </div>
     </div>
+  </section>
+  <!-- info section -->
+  <section class="greeenerybg">
+    <div class="container py-5">
+      <h1 class="font-gondgir text-center text-light my-4">
+        <b>Select your perfect greenery</b>
+      </h1>
+      <div class="d-flex justify-content-center mb-4">
+        <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+            <b>Explore</b>
+          </button></a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container py-3">
+      <div class="row justify-content-center my-3">
+        <div class="col-md-2 col-4">
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/caretips.png" class="w-50 h-25" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">Care Tips</p>
+        </div>
+        <div class="col-md-2 col-4">
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/delivery.png" class="w-50 h-25" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">
+            Free Delivery <br />on all orders
+          </p>
+        </div>
+        <div class="col-md-2 col-4">
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/gurantee.png" class="w-50 h-20" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">
+            45-Day <br />guarantee
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /SLIDER bottom info -->
+
+  <!-- plants -->
+  <section class="plants" id="multiple-plants">
+    <div class="container py-3">
+      <h2 class="text-center lightgreentext"><b>PLANTS</b></h2>
+      <p class="text-center lightgreentext">
+        Plants make for the best house companions, suitable for all your moods
+        and every aesthetic. Plantix brings you the widest variety of plants
+        to choose from so you can buy plants online from the comfort of your
+        home!
+      </p>
+      <div class="row px-md-5">
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Broken Heart Plant.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Broken Heart</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.6</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 399 - 699</p>
+        </div>
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Boston Compacta.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Boston Compacta</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.7</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 199-499</p>
+        </div>
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Ixora (Rugmini) Plant - Red.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Ixora (Rugmini)</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">5.0</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 499 - 899</p>
+        </div>
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Aloe Vera Mini Plant.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Aloe Vera Mini</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 199-599</p>
+        </div>
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Variegated Jade Mini Plant.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Variegated Jade Mini
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs399-799</p>
+        </div>
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Syngonium Pink Plant.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Syngonium Pink</p>
+          <div class="d-flex mx-2 card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.6</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 199 - 399</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Snake Plant - Golden Hahnii.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Golden Hahnii</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 299 - 599</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantimg rounded-5">
+            <img src="assets/img/plants/Snake Plant - Futura Superba.jpg" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Snake Plant</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext mb-0">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs 299 - 699</p>
+        </div>
+      </div>
+    </div>
+
     <div class="d-flex justify-content-center mb-4">
-      <a href=""
-        ><button
-          class="btn darkbrownbg border-2 border-light rounded-pill text-light"
-        >
+      <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
           <b>View More</b>
-        </button></a
-      >
+        </button></a>
     </div>
-    <!-- /offers -->
+  </section>
 
-    <!-- track your order -->
-    <section class="order-track" id="track-order">
-      <div class="container py-5">
-        <h1 class="font-gondgir text-center text-light my-5">
-          <b>Track Your Order</b>
-        </h1>
-      </div>
-    </section>
-    <form class="row g-3 mt-5">
-      <div class="col-md-6">
-        <label for="input" class="form-label">Invoice ID</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputnumber"
-          placeholder="Invoice Number"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="input" class="form-label">Order ID</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputorder"
-          placeholder="Order Tracking Number"
-        />
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Contact Number</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputcontact"
-          placeholder="Enter Contact Number"
-        />
-      </div>
-    </form>
-    <div class="d-flex justify-content-center mt-4">
-      <a href=""
-        ><button
-          class="btn darkgreenbg border-2 border-light rounded-pill text-light"
-        >
-          <b>Check order</b>
-        </button></a
-      >
-    </div>
+  <!-- /plants -->
 
-    <!-- /track your order -->
-
-    <!-- customer support -->
-    <section class="support" id="Contact">
-      <div class="container py-5 mt-5">
-        <h1 class="font-gondgir text-center text-light my-5">
-          <b>Customer Support</b>
-        </h1>
-      </div>
-    </section>
-    <div class="container">
-      <div class="container py-3 mt-3">
-        <h5 class="text-center darkgreentext">
-          <b>Want to chat or get a call from us ?</b>
-        </h5>
-      </div>
-    </div>
-    <section class="customer-support">
-      <div class="container py-3">
-        <div class="row justify-content-center my-3">
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/check.png" class="w-50 h-25" alt="" />
-            </div>
-            <p class="text-center lightgreentext mt-1">Check Order</p>
+  <!-- seeds -->
+  <section class="seeds" id="seed-section">
+    <div class="container py-3">
+      <h2 class="text-center lightgreentext"><b>SEEDS</b></h2>
+      <p class="text-center lightgreentext">
+        With high-yielding varieties of , flower seeds with high germination
+        rates, and exotic flower bulbs, Plantix guarantees only the best
+        organic seeds for you ! Elevate your home with our carefully crafted
+        selection of seeds. !
+      </p>
+      <div class="row px-md-5">
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed1.png" class="w-100" alt="" />
           </div>
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center ">
-              <img src="assets/img/Vector Smart Object.png" class="w-50 h-25" alt="" />
+          <p class="text-center darkgreentext">Coleus Seeds</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
             </div>
-            <p class="text-center lightgreentext mt-1">
-              Get help with Petalix
-            </p>
+            <p class="text-center darkgreentext">4.8</p>
           </div>
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/payment.png" class="w-50 h-20" alt="" />
+          <p class="text-center darkgreentext">Rs. 35 - 50</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed2.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Aralia Seeds</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
             </div>
-            <p class="text-center lightgreentext mt-1">
-              Payment Info
-            </p>
+            <p class="text-center darkgreentext">5.0</p>
           </div>
+          <p class="text-center darkgreentext">Rs. 20 - 100</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed3.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Lace Fern Seeds</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs. 40 - 150</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed4.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Brida Creeper Seeds
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">5.0</p>
+          </div>
+          <p class="text-center darkgreentext">Rs. 50 - 150</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed5.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Lemon Eucalyptus Seeds
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs. 70 - 80</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed6.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Aloevera Seeds</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.7</p>
+          </div>
+          <p class="text-center darkgreentext">Rs. 30 - 60</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed7.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Wax Bagonia Seeds</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs. 20 - 60</p>
+        </div>
+        <div class="col-md-3">
+          <div class="seedsimg rounded-5">
+            <img src="assets/img/seeds/seed8.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Foxtail Fern Seeds</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs. 30 - 50</p>
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+          <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+              <b>View More</b>
+            </button></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- /seeds -->
 
-    <!-- /customer support -->
-    <!-- Footer start------------------------------------------------------ -->
-    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary" id="about">
-      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
-        <div class="row">
-          <div class="col-lg-3 mb-3">
-            <a
-              class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
-              href="/"
-              aria-label="Bootstrap"
-            ><img src="assets/img/Vector Smart Object.png" alt=" width 40"
-            height="32"
-            class="d-block me-2"
-            viewBox="0 0 118 94"
-            role="img" />
-              
-              <span class="fs-5">Petalix</span>
-            </a>
-            <h5>About Us</h5>
-            <p>Inspired by the harmony of nature, Petalix refers to the delicate, colorful parts of a flower that surround the center. Cultivate your own sanctuary of serenity right at home. Whether you're a seasoned plant parent or just beginning your green journey, Petalix is here to nurture your passion for plants with expert guidance and premium products. Experience the joy of green living with Petalix—where every leaf tells a story and every bloom inspires wonder.</p>
-                
+  <!-- planters & pots -->
+  <section class="planters" id="pots&planters">
+    <div class="container py-3">
+      <h2 class="text-center lightgreentext"><b>PLANTERS & POTS</b></h2>
+      <p class="text-center lightgreentext">
+        Plant pots are the best way to give your plants a safe and happy home,
+        as well as elevate your home decor game. With Plantix’s collection of
+        sleek, elegant, and aesthetic pots and planters, you can give your
+        plants only the best! !
+      </p>
+      <div class="row px-md-5">
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/pot1.png" class="w-100" alt="" />
           </div>
-          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-            <h5>Links</h5>
-            <ul class="list text-decoration-none">
-              <li class="mb-2"><a href="/">Home</a></li>
-              <li class="mb-2"><a href="#">Contact us</a></li>
-              <li class="mb-2"><a href="#">Privacy Policy</a></li>
-              <li class="mb-2">
-                <a href="#">Shipping Policy</a>
-              </li>
-              <li class="mb-2">
-                <a href="#">Terms & Conditions</a>
-              </li>
-              <li class="mb-2">
-                <a href="#"></a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                  >Cancellation Policy</a
-                >
-              </li>
-            </ul>
+          <p class="text-center darkgreentext">
+            Honeycomb Ceramic Pot
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.7</p>
           </div>
-          
-          </div>
-          
+          <p class="text-center darkgreentext">Rs.399</p>
         </div>
-    </footer>
-    <!-- Footer end-->
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/pot2.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Star Ceramic Pot </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.7</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.299</p>
+        </div>
 
-    <!-- JS LINK -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/pot3.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext"> Jar Ceramic Pot</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">5.0</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.699</p>
+        </div>
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/pot4.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Apple Ceramic Pot </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.799</p>
+        </div>
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/planter1.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Orbit Wooden Planter
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">5.0</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.1500</p>
+        </div>
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/planter2.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">Hexa Coir Planter</p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.1699</p>
+        </div>
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/planter3.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Lilac Stories Bowl Planter
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.999</p>
+        </div>
+        <div class="col-md-3">
+          <div class="potimg rounded-5">
+            <img src="assets/img/pots/planter4.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Immortal Nights Planter
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.2999</p>
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+          <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+              <b>View More</b>
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /planters & pots -->
+
+  <!-- plant care -->
+  <section class="plant-care" id="caring">
+    <div class="container py-3">
+      <h2 class="text-center lightgreentext"><b>PLANT CARE</b></h2>
+      <p class="text-center lightgreentext">
+        Feed your plants and help them thrive with our range of organic,
+        sustainable and locally produced indoor plant care products. Plus
+        browse the handiest houseplant care tools & accessories around!
+      </p>
+      <div class="row px-md-5">
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Aroid Potting Mix
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.999</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare2.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Watering
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.1500</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare3.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Microfiber Dusting Gloves
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.999</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare4.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Organic Bio Insecticide
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">5.0</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.3500</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare5.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Neem Oil
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.999</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare6.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Soil Care Kit
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.1699</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare7.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkpeentext">
+            Pot & Plant Barrier
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.8</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.699</p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="plantcareimg rounded-5">
+            <img src="assets/img/plantcare/plantcare8.png" class="w-100" alt="" />
+          </div>
+          <p class="text-center darkgreentext">
+            Plant Fertilizer
+          </p>
+          <div class="d-flex card-rating">
+            <div class="ratingstars">
+              <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
+              <!-- Rating Stars -->
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <i class="fa fa-star ratings" aria-hidden="true"></i>
+              <!-- half start -->
+              <i class="fa fa-star-half-alt ratings" aria-hidden="true"></i>
+            </div>
+            <p class="text-center darkgreentext">4.9</p>
+          </div>
+          <p class="text-center darkgreentext">Rs.999</p>
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+          <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+              <b>View More</b>
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /plant care -->
+
+  <!-- offer -->
+  <section class="salebg" id="combo-offers">
+    <div class="container py-5">
+      <h1 class="font-gondgir text-center text-light my-4">
+        <b>Get upto 70% off</b>
+      </h1>
+      <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-4">
+          <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+              <b>Shop Now</b>
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container py-3">
+    <h2 class="text-center lightgreentext"><b>OFFERS</b></h2>
+    <div class="row justify-content-center my-3">
+      <div class="col-md-2 col-9">
+        <div class="plantimg rounded-circle">
+          <img src="assets/img/offers/seeds.png" class="w-100 rounded-circle" alt="" />
+        </div>
+        <p class="text-center lightgreentext mt-1">Seeds</p>
+      </div>
+      <div class="col-md-2 col-9">
+        <div class="plantimg rounded-circle">
+          <img src="assets/img/offers/combo.png" class="w-100 rounded-circle" alt="" />
+        </div>
+        <p class="text-center lightgreentext mt-1">Combo</p>
+      </div>
+      <div class="col-md-2 col-9">
+        <div class="plantimg rounded-circle">
+          <img src="assets/img/offers/succulents.png" class="w-100 rounded-circle" alt="" />
+        </div>
+        <p class="text-center lightgreentext mt-1">Succulents</p>
+      </div>
+      <div class="col-md-2 col-9">
+        <div class="plantimg rounded-circle">
+          <img src="assets/img/offers/low light.png" class="w-100 rounded-circle" alt="" />
+        </div>
+        <p class="text-center lightgreentext mt-1">Low Light</p>
+      </div>
+      <div class="col-md-2 col-9">
+        <div class="plantimg rounded-circle">
+          <img src="assets/img/offers/airpurifier.jpeg" class="w-100 rounded-circle" alt="" />
+        </div>
+        <p class="text-center lightgreentext mt-1">Air Purifying</p>
+      </div>
+    </div>
+    <div class="text-center darkgreenbg rounded-pill px-3 py-2 text-light">
+      <img src="assets/img/offer.png" alt="offer sign" style="width: 25px; height: 25px" />
+      <!-- <i class="fa fa-arrow-left"></i> -->
+      Get Free Water Pen on above ₹<strong>999</strong> Use code
+      <span class="text-uppercase rounded bdr-dashed px-1">petalixfree</span>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mb-4">
+    <a href=""><button class="btn darkbrownbg border-2 border-light rounded-pill text-light">
+        <b>View More</b>
+      </button></a>
+  </div>
+  <!-- /offers -->
+
+  <!-- track your order -->
+  <section class="order-track" id="track-order">
+    <div class="container py-5">
+      <h1 class="font-gondgir text-center text-light my-5">
+        <b>Track Your Order</b>
+      </h1>
+    </div>
+  </section>
+  <form class="row g-3 mt-5">
+    <div class="col-md-6">
+      <label for="input" class="form-label">Invoice ID</label>
+      <input type="text" class="form-control" id="inputnumber" placeholder="Invoice Number" />
+    </div>
+    <div class="col-md-6">
+      <label for="input" class="form-label">Order ID</label>
+      <input type="text" class="form-control" id="inputorder" placeholder="Order Tracking Number" />
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Contact Number</label>
+      <input type="text" class="form-control" id="inputcontact" placeholder="Enter Contact Number" />
+    </div>
+  </form>
+  <div class="d-flex justify-content-center mt-4">
+    <a href=""><button class="btn darkgreenbg border-2 border-light rounded-pill text-light">
+        <b>Check order</b>
+      </button></a>
+  </div>
+
+  <!-- /track your order -->
+
+  <!-- customer support -->
+  <section class="support" id="Contact">
+    <div class="container py-5 mt-5">
+      <h1 class="font-gondgir text-center text-light my-5">
+        <b>Customer Support</b>
+      </h1>
+    </div>
+  </section>
+  <div class="container">
+    <div class="container py-3 mt-3">
+      <h5 class="text-center darkgreentext">
+        <b>Want to chat or get a call from us ?</b>
+      </h5>
+    </div>
+  </div>
+  <section class="customer-support">
+    <div class="container py-3">
+      <div class="row justify-content-center my-3">
+        <div class="col-md-2 col-9">
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/check.png" class="w-50 h-25" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">Check Order</p>
+        </div>
+        <div class="col-md-2 col-9">
+          <div class="d-flex justify-content-center ">
+            <img src="assets/img/Vector Smart Object.png" class="w-50 h-25" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">
+            Get help with Petalix
+          </p>
+        </div>
+        <div class="col-md-2 col-9">
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/payment.png" class="w-50 h-20" alt="" />
+          </div>
+          <p class="text-center lightgreentext mt-1">
+            Payment Info
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- /customer support -->
+  <!-- Footer start------------------------------------------------------ -->
+  <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary" id="about">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
+            aria-label="Bootstrap"><img src="assets/img/Vector Smart Object.png" alt=" width 40" height="32"
+              class="d-block me-2" viewBox="0 0 118 94" role="img" />
+
+            <span class="fs-5">Petalix</span>
+          </a>
+          <h5>About Us</h5>
+          <p>Inspired by the harmony of nature, Petalix refers to the delicate, colorful parts of a flower that surround
+            the center. Cultivate your own sanctuary of serenity right at home. Whether you're a seasoned plant parent
+            or just beginning your green journey, Petalix is here to nurture your passion for plants with expert
+            guidance and premium products. Experience the joy of green living with Petalix—where every leaf tells a
+            story and every bloom inspires wonder.</p>
+
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Links</h5>
+          <ul class="list text-decoration-none">
+            <li class="mb-2"><a href="/">Home</a></li>
+            <li class="mb-2"><a href="#">Contact us</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+            <li class="mb-2">
+              <a href="#">Shipping Policy</a>
+            </li>
+            <li class="mb-2">
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li class="mb-2">
+              <a href="#"></a>
+            </li>
+            <li class="mb-2">
+              <a href="#" target="_blank" rel="noopener">Cancellation Policy</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- Footer end-->
+
+  <!-- JS LINK -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
