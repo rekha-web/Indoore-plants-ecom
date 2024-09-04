@@ -1,0 +1,7 @@
+.navbar-nav {
+    text-align: center;
+    padding-bottom: .9375rem;
+}
+.navbar-nav .nav-item .nav-link a{
+    margin-top: .9375rem;
+}

@@ -7,6 +7,52 @@
   transition: 0.1s ease-in-out;
 }
 
+:root {
+  --primary-color: #7d8035;
+  --secondary-color: #666a25;
+  --tertiary-color: #754c24;
+  --bg-color: #e1e1e1;
+}
+body {
+  background-color: #e1e1e1;
+}
+
+
+embed,
+iframe,
+img,
+object {
+  max-width: 100%;
+}
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+  text-decoration: none;
+  outline: 0;
+}
+
+li a {
+  color: #666a25;
+}
+
+a:hover,
+button:hover {
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+::-webkit-scrollbar-thumb {
+  background: #e79a4d;
+}
 /* Navbar start */
 .search-group {
   position: relative;
@@ -49,19 +95,19 @@
   margin: 0;
 }
 
-.slider-slogan {
+/* .slider-slogan {
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(102, 106, 37, 0.2);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   bottom: 10vh;
-}
-.slider-slogan h1 {
+} */
+/* .slider-slogan h1 {
   font-size: 3rem;
   text-shadow: black;
   font-weight: bold;
-}
+} */
 
 .bdr-dashed {
   border: 2px dashed;
@@ -73,6 +119,7 @@
 }
 .font-gondgir {
   font-family: "Gondgir";
+  font-size: 4rem;
 }
 
 .darkgreenbg {
@@ -103,11 +150,57 @@
   display: none !important;
 }
 
-.carouselImg {
-  height: 80vh !important;
-  width: max-content;
+.banner_wrapper {
+  height: 40.625rem !important;
+  /* width: max-content; */
+}
+.banner_wrapper .swiper {
+  width: 100%;
+  height: 100%;
 }
 
+.banner_wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_wrapper .swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #666a25; */
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.banner_wrapper .swiper-pagination-bullets .swiper-pagination-bullet{
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: var(--tertiary-color);
+  border: 0.0625rem solid white;
+}
+
+.banner_wrapper .swiper .slide-caption {
+  height: 100%;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.banner_wrapper .swiper .slide-caption{
+  color: white;
+  font-weight: 700;
+}
 .plantimg {
   border: 1.5px solid #666a25 !important;
   overflow: hidden;
@@ -124,6 +217,21 @@
 .plantcareimg {
   border: 1.5px solid #666a25 !important;
   overflow: hidden;
+}
+
+.main-btn {
+  position: relative;
+  background: linear-gradient(to right, #754c24, #e79a4d);
+  z-index: 1;
+  overflow: hidden;
+  border: 0.2rem solid white;
+  padding: 0.3rem 1rem;
+}
+
+.main-btn:hover {
+  background: #e1e1e1;
+  color: #7d8035;
+  border: 0.2rem solid white;
 }
 
 @media (max-width: 500px) {
@@ -156,7 +264,7 @@
   body {
     background-color: orange;
   }
-  .carouselImg{
+  .swiper-slide {
     width: 100% !important;
     height: auto !important;
   }
