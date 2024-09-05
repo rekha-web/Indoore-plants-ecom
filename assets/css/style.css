@@ -201,6 +201,7 @@ button:hover {
   color: white;
   font-weight: 700;
 }
+
 .plantimg {
   border: 1.5px solid #666a25 !important;
   overflow: hidden;
@@ -219,6 +220,26 @@ button:hover {
   overflow: hidden;
 }
 
+.maintop-btn{
+  background: linear-gradient(to right, #754c24, #e79a4d);
+  border: 0.2rem solid white;
+  padding: 0.5rem 2rem;
+  position: relative;
+  font-weight: 550;
+  font-size: 1.2rem;
+  margin-top:1.5rem;
+  
+}
+
+.feature_section img:hover{
+  background-color: goldenrod;
+}
+.maintop-btn:hover {
+  background: #e1e1e1;
+  color: #754c24;
+  border: 0.2rem solid white;
+}
+
 .main-btn {
   position: relative;
   background: linear-gradient(to right, #754c24, #e79a4d);
@@ -230,15 +251,35 @@ button:hover {
 
 .main-btn:hover {
   background: #e1e1e1;
-  color: #7d8035;
+  color: #754c24;
   border: 0.2rem solid white;
 }
 
+/* About section */
+
+.landing_about_section {
+  background: url("../img/about/about3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 9rem 0;
+}
+
+.landing_about_section h2{
+  color: #754c24;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.landing_about_section p{
+  color: #666a25;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
 @media (max-width: 500px) {
   .small-screen-text {
     font-size: 11px;
   }
-
+  
   .large-hide {
     display: block !important;
   }
