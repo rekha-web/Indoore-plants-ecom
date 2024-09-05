@@ -5,3 +5,8 @@
 .navbar-nav .nav-item .nav-link a{
     margin-top: .9375rem;
 }
+
+/* footer */
+.footer_wrapper > div {
+    padding: 0 1.875rem;
+}

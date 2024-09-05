@@ -248,32 +248,9 @@
         
         </div>
 
-        
-<!--      
-        <div class="swiper-slide" style="background-image: url(./assets/img/slider/bg4.jpeg);">
-          <div class="slide-caption text-center">
-            <h1 class="font-gondgir">
-              "Leafy green's Happy scenes"
-            </h1>
-          </div>
-        </div>
-      
-      
-      
-        <div class="swiper-slide" style="background-image: url(./assets/img/slider/bg3.jpeg);">
-          <div class="slide-caption text-center">
-            <h1 class="font-gondgir">
-              "Leafy green's Happy scenes"
-            </h1>
-          </div>
-        </div> -->
       </div>
       
-  
-      
-      <div class="swiper-pagination">
-
-      </div>
+      <div class="swiper-pagination"></div>
       <!-- <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -496,37 +473,6 @@
     </section>
 
     <!-- /SLIDER bottom info -->
-
-    <!-- About Section Start -->
-     <section class="landing_about_section" id="about
-     ">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-5 col-lg-6 col-sm-8">
-            <div class="about-content">
-              <h2 >We Providing Services Since 2024 With Proud.</h2>
-            <div class="about-details">
-              <p class="fw-bold">Join us in our mission to spread the joy of indoor plantation, and let's grow a greener tomorrow together!"
-              </p>
-              <p>
-                Welcome <b>PETALIX</b>, your one-stop destination for all things indoor plantation. We're passionate about helping you bring the beauty of nature indoors, and making your spaces greener and more vibrant.
-                </p>
-              <p>Our journey began with a simple idea - to make indoor plantation accessible and easy for everyone. We believe that being surrounded by nature has the power to transform our lives, and we're dedicated to helping you experience that.....
-              </p>
-              <a href="about.html"
-          ><button
-            class="main-btn  darkbrownbg border-2 border-light rounded-pill text-light"
-          >
-            <b>Read More</b>
-          </button></a
-        >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     </section>
-
     <!-- plants -->
     <section class="plants" id="multiple-plants">
       <div class="container py-3">
@@ -1427,53 +1373,56 @@
     <!-- /offers -->
 
     <!-- track your order -->
-    <section class="order-track" id="track-order">
+    <section class="order-track " id="track-order">
       <div class="container py-5">
         <h1 class="font-gondgir text-center text-light my-5">
           <b>Track Your Order</b>
         </h1>
       </div>
     </section>
-    <form class="row g-3 mt-5">
-      <div class="col-md-6">
-        <label for="input" class="form-label">Invoice ID</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputnumber"
-          placeholder="Invoice Number"
-        />
+    <section class="container pt-5 d-flex justify-content-center">
+      <div class="card card-body bg-transparent" style="max-width: 700px;">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="input" class="form-label">Invoice ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputnumber"
+              placeholder="Invoice Number"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="input" class="form-label">Order ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputorder"
+              placeholder="Order Tracking Number"
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Contact Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputcontact"
+              placeholder="Enter Contact Number"
+            />
+          </div>
+        </form>
+        <div class="d-flex justify-content-center mt-4">
+          <a href=""
+            ><button
+              class="main-btn  darkgreenbg border-2 border-light rounded-pill text-light"
+            >
+              <b>Check order</b>
+            </button></a
+          >
+        </div>
       </div>
-      <div class="col-md-6">
-        <label for="input" class="form-label">Order ID</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputorder"
-          placeholder="Order Tracking Number"
-        />
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Contact Number</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputcontact"
-          placeholder="Enter Contact Number"
-        />
-      </div>
-    </form>
-    <div class="d-flex justify-content-center mt-4">
-      <a href=""
-        ><button
-          class="main-btn  darkgreenbg border-2 border-light rounded-pill text-light"
-        >
-          <b>Check order</b>
-        </button></a
-      >
-    </div>
-
-    <!-- /track your order -->
+    </section>
+    <!-- /track your order -->
 
     <!-- customer support -->
     <section class="support" id="Contact">
@@ -1483,45 +1432,118 @@
         </h1>
       </div>
     </section>
-    <div class="container">
-      <div class="container py-3 mt-3">
-        <h5 class="text-center darkgreentext">
-          <b>Want to chat or get a call from us ?</b>
-        </h5>
+   
+     <!-- Support Options -->
+     <section class="support-options">
+      <div class="container">
+          <h2 >Want to chat or get a call from us?</h2>
+          <div class="row mt-4">
+              <!-- Chat Card -->
+              <div class="col-lg-6 col-md-5 mb-3">
+                  <div class="card-custom">
+                      <h5 style="color: #cfcdcd;">Chat right now</h5>
+                      <p style="color: #e1e1e1;">Our messaging assistant can quickly solve many issues or direct you to the right person or place.</p>
+                      <button class="btn-chat lightgreentext">Chat with us...</button>
+                      
+                  </div>
+              </div>
+              <!-- Call Card -->
+              <div class="col-lg-6 col-md-6 mb-4">
+                  <div class="card-custom">
+                      <h5 style="color: #cfcdcd;">Call us</h5>
+                      <p style="color: #e1e1e1;">We'll first get a few details about your issue and then someone will call you right away.</p>
+                      <button class="btn-call lightgreentext">Call me...</button>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <section class="feature_section">
-      <div class="container py-3">
-        <div class="row justify-content-center my-3">
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/check.png" class="w-50 h-25" alt="" />
-            </div>
-            <p class="text-center lightgreentext mt-1">Check Order</p>
+  </section>
+<!-- /support option -->
+     <!-- Self Help Section -->
+     <section class="icon-section">
+      <div class="container">
+          <h3>Here are a few things you can take care of on your own</h3>
+          <div class="row justify-content-center mt-4">
+              <!-- Check Order -->
+              <div class="col-lg-4 col-md-4 col-sm-6 text-center">
+                  <img src="assets/img/check.png"  alt="Check Order">
+                  <h6>Check Order</h6>
+              </div>
+              <!-- Help with Petalix -->
+              <div class="col-lg-4 col-md-4 col-sm-6 text-center">
+                  <img src="assets/img/Vector Smart Object.png" alt="Petalix Help">
+                  <h6>Get Help with Petalix</h6>
+              </div>
+              <!-- Payment Info -->
+              <div class="col-lg-4 col-md-4 col-sm-6 text-center">
+                  <img src="assets/img/payment.png" alt="Payment Info">
+                  <h6>Payment Info</h6>
+              </div>
           </div>
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img
-                src="assets/img/Vector Smart Object.png"
-                class="w-50 h-25"
-                alt=""
-              />
-            </div>
-            <p class="text-center lightgreentext mt-1">Get help with Petalix</p>
-          </div>
-          <div class="col-md-2 col-9">
-            <div class="d-flex justify-content-center">
-              <img src="assets/img/payment.png" class="w-50 h-20" alt="" />
-            </div>
-            <p class="text-center lightgreentext mt-1">Payment Info</p>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
 
     <!-- /customer support -->
     <!-- Footer start-->
-   
+   <section id="contact" class="footer_wrapper mt-3 mt-2 pb-0">
+    <div class="container pb-3 ">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mt-5">
+        <h5>Petalix</h5>
+        <p class="ps-0">On our website, you'll find a curated selection of indoor plants, planters, and expert tips to help you get started. Whether you're a seasoned gardener or a newbie, we've got you covered!</p>
+
+        <div class="contact-info">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa-solid fa-house-user"></i>sec. 86, Noida, Uttar Pradesh</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone-volume"></i>+91 9955425672</a></li>
+            <li><a href="#"><i class="fa-solid fa-square-envelope"></i>info@petalix.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5">
+        <h5>More Links</h5>
+        <ul class="link-widget p-0">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Office</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Our Store</a></li>
+          <li><a href="#">Guarantee</a></li>
+          <li><a href="#">Buy Gift Card</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5">
+        <h5>More Links</h5>
+        <ul class="link-widget p-0">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Office</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Our Store</a></li>
+          <li><a href="#">Guarantee</a></li>
+          <li><a href="#">Buy Gift Card</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5">
+        <h5>Newsletter</h5>
+        <div class="form-group mb-4">
+          <input type="email" class="form-control bg-transparent " placeholder="Enter your email">
+          <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+        </div>
+        <h5>Stay Connected</h5>
+        <ul class="social-network d flex align-items-center p-0">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-vimeo"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid copyright-section">
+      <p>Copyright <a href="#">© PETALIX.</a> All  Rights Reseverd</p>
+    </div>
+   </section>
     <!-- Footer end-->
 
     <!-- JS LINK -->
