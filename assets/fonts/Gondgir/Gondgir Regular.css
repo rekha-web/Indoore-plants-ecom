@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Gondgir";
-  src: url("Gondgir.woff") format("woff"),
-  url("Gondgir Regular.ttf"),
+  src: url("Gondgir Regular.ttf"),
     /* Modern Browsers */ url("Gondgir.woff2") format("woff2"),
     /* Modern Browsers */ url("Gondgir.otf") format("opentype"); /* Safari, Android, iOS */
   font-style: normal;
