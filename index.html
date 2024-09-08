@@ -233,107 +233,58 @@
       </div>
     </nav>
 
-    <!-- SLIDER -->
-    <!-- <section id="home" class="banner_wrapper p-0">
-      <div class="swiper myswiper">
-        <div class="swiper-slide">
-          <style>
-            .video-background {
-              position: relative;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              z-index: -1; /* Keeps the video in the background */
-            }
-
-            .content {
-              position: absolute;
-              z-index: 1; /* Ensures content is above video */
-              color: white;
-              top: 40%;
-              text-align: center;
-              transform: translateY(-50%);
-            }
-          </style>
-          <video autoplay muted loop class="video-background">
-            <source
-              src="https://videos.pexels.com/video-files/4503780/4503780-uhd_2732_1440_25fps.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <div class="content" data-aos="fade-center">
-            <div class="slide-caption text-center">
-              <h1 class="font-gondgir">
-                <b>"Leafy green's Happy scenes"</b>
-              </h1>
-
-              <a href=""
-                ><button
-                  class="maintop-btn darkbrownbg border-2 border-light rounded-pill text-light"
-                >
-                  <b>More Option</b>
-                </button></a
-              > -->
-
-    <!-- src="https://www.pexels.com/video/hands-books-plant-pot-4503780/" -->
-    <!-- style="background-image: url(./assets/img/slider/bg1.jpg)" -->
-    <!-- </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- /SLIDER -->
-
-    <div
-      id="carousel-exmple-generic"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <!-- indicators -->
-      <ol class="carousel-indicators">
-        <li
-          data-bs-target="#carousel-example-generic"
-          data-slide-to="0"
-          claas
-          active
-        ></li>
-        <li data-bs-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-bs-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-    </div>
-
-    <!-- wrapper for slides -->
-    <style>
-      .video-background {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1; /* Keeps the video in the background */
-      }
-
-      .content {
-        position: absolute;
-        z-index: 1; /* Ensures content is above video */
-        color: white;
-        top: 40%;
-        text-align: center;
-        transform: translateY(-50%);
-      }
-    </style>
-    <section>
-      <div class="carousel-inner" role="listbox">
-        <div class="item-active">
-          <div class="swiper-slide">
-            <video autoplay muted loop class="video-background">
+    <!-- Carousel start -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="position-relative"></div>
+            <video autoplay muted loop class="w-100">
               <source src="assets/video/video1.mp4" type="video/mp4" />
             </video>
-            <div class="content" data-aos="fade-center">
-              <div class="slide-caption text-center">
+            <div class="content position-absolute top-50 start-50 translate-middle text-center text-light" data-aos="fade-center">
+              <div class="slide-caption rounded py-3" style="backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.204)">
+                <h1 class="font-gondgir">
+                  <b>"Leafy <span>green's</span> Happy scenes"</b>
+                </h1>
+                <a href=""
+                  ><button
+                    class="maintop-btn darkbrownbg border-2 border-light rounded-pill text-light"
+                  >
+                    <b>More Option</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="position-relative">
+            <video autoplay muted loop class="w-100" >
+              <source src="assets/video/video1.mp4" type="video/mp4" />
+            </video>
+            <div class="content position-absolute top-50 start-50 translate-middle text-center text-light" data-aos="fade-center">
+              <div class="slide-caption rounded py-3" style="backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.204)">
+                <h1 class="font-gondgir">
+                  <b>"Leafy <span>green's</span> Happy scenes"</b>
+                </h1>
+                <a href=""
+                  ><button
+                    class="maintop-btn darkbrownbg border-2 border-light rounded-pill text-light"
+                  >
+                    <b>More Option</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="position-relative">
+            <video autoplay muted loop class="w-100">
+              <source src="assets/video/video1.mp4" type="video/mp4" />
+            </video>
+            <div class="content position-absolute top-50 start-50 translate-middle text-center text-light" data-aos="fade-center">
+              <div class="slide-caption rounded py-3" style="backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.204)">
                 <h1 class="font-gondgir">
                   <b>"Leafy <span>green's</span> Happy scenes"</b>
                 </h1>
@@ -349,7 +300,16 @@
           </div>
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel end -->
 
     <!-- SLIDER bottom info -->
     <section>
@@ -867,10 +827,10 @@
     </section>
     <!-- /seeds -->
 
-    <!-- planters & pots -->
+    <!-- planters &amp; pots -->
     <section class="planters" id="pots&planters">
       <div class="container py-3">
-        <h2 class="text-center lightgreentext"><b>PLANTERS & POTS</b></h2>
+        <h2 class="text-center lightgreentext"><b>PLANTERS &amp; POTS</b></h2>
         <p class="text-center lightgreentext">
           Plant pots are the best way to give your plants a safe and happy home,
           as well as elevate your home decor game. With Plantix’s collection of
@@ -1049,7 +1009,7 @@
         </div>
       </div>
     </section>
-    <!-- /planters & pots -->
+    <!-- /planters &amp; pots -->
 
     <!-- plant care -->
     <section class="plant-care" id="caring">
@@ -1058,7 +1018,7 @@
         <p class="text-center lightgreentext">
           Feed your plants and help them thrive with our range of organic,
           sustainable and locally produced indoor plant care products. Plus
-          browse the handiest houseplant care tools & accessories around!
+          browse the handiest houseplant care tools &amp; accessories around!
         </p>
         <div class="row px-md-5">
           <div class="col-md-3">
@@ -1219,7 +1179,7 @@
                 alt=""
               />
             </div>
-            <p class="text-center darkpeentext">Pot & Plant Barrier</p>
+            <p class="text-center darkpeentext">Pot &amp; Plant Barrier</p>
             <div class="d-flex card-rating">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
