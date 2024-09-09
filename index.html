@@ -234,36 +234,57 @@
     </nav>
 
     <!-- Carousel start -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <div class="position-relative"></div>
-            <video autoplay muted loop class="w-100">
-              <source src="assets/video/video1.mp4" type="video/mp4" />
-            </video>
-            <div class="content position-absolute top-50 start-50 translate-middle text-center text-light" data-aos="fade-center">
-              <div class="slide-caption rounded py-3" style="backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.204)">
-                <h1 class="font-gondgir">
-                  <b>"Leafy <span>green's</span> Happy scenes"</b>
-                </h1>
-                <a href=""
-                  ><button
-                    class="maintop-btn darkbrownbg border-2 border-light rounded-pill text-light"
-                  >
-                    <b>More Option</b>
-                  </button></a
+          <video autoplay muted loop class="w-100">
+            <source src="assets/video/video1.mp4" type="video/mp4" />
+          </video>
+          <div
+            class="content position-absolute top-50 start-50 translate-middle text-center text-light"
+            data-aos="fade"
+          >
+            <div
+              class="slide-caption border rounded-pill py-2"
+              style="
+                backdrop-filter: blur(5px);
+                background-color: rgba(3, 54, 7, 0.204);
+              "
+            >
+              <h1 class="font-gondgir">
+                <b>"Leafy <span>green's</span> Happy scenes"</b>
+              </h1>
+              <a href=""
+                ><button
+                  class="maintop-btn darkbrownbg border-2 border-light rounded-pill text-light"
                 >
-              </div>
+                  <b>More Option</b>
+                </button></a
+              >
             </div>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-ride="10000">
           <div class="position-relative">
-            <video autoplay muted loop class="w-100" >
-              <source src="assets/video/video1.mp4" type="video/mp4" />
+            <video autoplay muted loop class="w-100">
+              <source src="assets/video/v3.mp4" type="video/mp4" />
             </video>
-            <div class="content position-absolute top-50 start-50 translate-middle text-center text-light" data-aos="fade-center">
-              <div class="slide-caption rounded py-3" style="backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.204)">
+            <div
+              class="content position-absolute top-50 start-50 translate-middle text-center text-light"
+              data-aos="fade-center"
+            >
+              <div
+                class="slide-caption rounded py-3"
+                style="
+                  backdrop-filter: blur(5px);
+                  background-color: rgba(0, 0, 0, 0.204);
+                "
+              >
                 <h1 class="font-gondgir">
                   <b>"Leafy <span>green's</span> Happy scenes"</b>
                 </h1>
@@ -281,10 +302,19 @@
         <div class="carousel-item">
           <div class="position-relative">
             <video autoplay muted loop class="w-100">
-              <source src="assets/video/video1.mp4" type="video/mp4" />
+              <source src="assets/video/v2.mp4" type="video/mp4" />
             </video>
-            <div class="content position-absolute top-50 start-50 translate-middle text-center text-light" data-aos="fade-center">
-              <div class="slide-caption rounded py-3" style="backdrop-filter: blur(5px); background-color: rgba(0, 0, 0, 0.204)">
+            <div
+              class="content position-absolute top-50 start-50 translate-middle text-center text-light"
+              data-aos="fade-center"
+            >
+              <div
+                class="slide-caption rounded py-3"
+                style="
+                  backdrop-filter: blur(5px);
+                  background-color: rgba(0, 0, 0, 0.204);
+                "
+              >
                 <h1 class="font-gondgir">
                   <b>"Leafy <span>green's</span> Happy scenes"</b>
                 </h1>
@@ -300,15 +330,26 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleInterval"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleInterval"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
     <!-- Carousel end -->
 
     <!-- SLIDER bottom info -->
@@ -399,19 +440,21 @@
     <section class="feature_section">
       <div class="container py-3">
         <div class="row justify-content-center my-3">
-          <div class="col-md-2 col-4">
+          <div class="col-md-2 col-4" data-aos="slide-up">
             <div class="d-flex justify-content-center">
               <img src="assets/img/ui-chat.png" class="w-50 h-25" alt="" />
             </div>
-            <p class="text-center lightgreentext mt-1">24/07 Support</p>
+            <p class="text-center lightgreentext mt-1" data-aos="slide-up">
+              24/07 Support
+            </p>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="col-md-2 col-4" data-aos="slide-up">
             <div class="d-flex justify-content-center">
               <img src="assets/img/caretips.png" class="w-50 h-25" alt="" />
             </div>
             <p class="text-center lightgreentext mt-1">Care Tips</p>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="col-md-2 col-4" data-aos="slide-up">
             <div class="d-flex justify-content-center">
               <img src="assets/img/delivery.png" class="w-50 h-25" alt="" />
             </div>
@@ -419,7 +462,7 @@
               Free Delivery <br />on all orders
             </p>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="col-md-2 col-4" data-aos="slide-up">
             <div class="d-flex justify-content-center">
               <img src="assets/img/gurantee.png" class="w-50 h-20" alt="" />
             </div>
@@ -443,7 +486,7 @@
           home!
         </p>
         <div class="row px-md-5">
-          <div class="col-lg-3">
+          <div class="col-lg-3" data-aos="fade-right">
             <div class="plantimg rounded-5">
               <img
                 src="assets/img/plants/Broken Heart Plant.jpg"
@@ -452,8 +495,8 @@
               />
             </div>
             <p class="text-center darkgreentext">Broken Heart</p>
-            <div class="d-flex card-rating">
-              <div class="ratingstars">
+            <div class="d-flex card-rating" data-aos="fade-left">
+              <div class="ratingstars" data-aos="fade-left">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
                 <!-- Rating Stars -->
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
@@ -467,7 +510,7 @@
             </div>
             <p class="text-center darkgreentext">Rs 399 - 699</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="plantimg rounded-5">
               <img
                 src="assets/img/plants/Boston Compacta.jpg"
@@ -476,7 +519,7 @@
               />
             </div>
             <p class="text-center darkgreentext">Boston Compacta</p>
-            <div class="d-flex card-rating">
+            <div class="d-flex card-rating" data-aos="fade-left">
               <div class="ratingstars">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
@@ -490,7 +533,7 @@
             </div>
             <p class="text-center darkgreentext">Rs 199-499</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-left">
             <div class="plantimg rounded-5">
               <img
                 src="assets/img/plants/Ixora (Rugmini) Plant - Red.jpg"
@@ -500,7 +543,7 @@
             </div>
             <p class="text-center darkgreentext">Ixora (Rugmini)</p>
             <div class="d-flex card-rating">
-              <div class="ratingstars">
+              <div class="ratingstars" data-aos="fade-left">
                 <!-- 5 i tags and add color to them suing bgyellow class and also add class mx-2 for gaps between stars on x-axis -->
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
                 <i class="fa fa-star ratings" aria-hidden="true"></i>
@@ -1549,6 +1592,7 @@
 
     <!-- JS LINK -->
     <script src="assets/js/script.js"></script>
+    <!-- our AOS Data -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

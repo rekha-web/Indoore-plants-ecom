@@ -139,61 +139,14 @@ button:hover {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* .banner_wrapper {
-  height: 35.625rem !important;
 
-}
-.banner_wrapper .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.banner_wrapper .swiper-slide {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.banner_wrapper .swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.banner_wrapper .swiper-pagination-bullets .swiper-pagination-bullet {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  background-color: var(--tertiary-color);
-  border: 0.0625rem solid white;
-}
-
-.banner_wrapper .swiper .slide-caption {
-  height: 100%;
-  position: relative;
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner_wrapper .swiper .slide-caption {
-  color: white;
-  font-weight: 700;
-} */
 
 .plantimg {
   border: 1.5px solid #666a25 !important;
   overflow: hidden;
+}
+.plantimg:hover{
+  transform: scale(0.5);
 }
 .seedsimg {
   border: 1.5px solid #666a25 !important;
@@ -328,9 +281,17 @@ button:hover {
   width: 50px;
 }
 .icon-section img:hover,
+ .feature_section p:hover 
+{
+  transform: scale(1.5);
+}
+
 .feature_section img:hover {
   transform: scale(1.5);
 }
+/* .feature_section p:hover r .feature_section img:hover {
+  transform: scale(1.5);
+} */
 .icon-section h6 {
   margin-top: 10px;
   color: #6c6c3a;
