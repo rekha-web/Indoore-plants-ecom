@@ -145,9 +145,6 @@ button:hover {
   border: 1.5px solid #666a25 !important;
   overflow: hidden;
 }
-.plantimg:hover,.seedsimg:hover, .{
-  transform: scale(1.5);
-}
 .seedsimg {
   border: 1.5px solid #666a25 !important;
   overflow: hidden;
@@ -225,22 +222,22 @@ button:hover {
 /* For responsiveness */
 /* widhth 768px, widht 356px and height 640px */
 /* For tablet */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     background-color: rgba(128, 0, 128, 0.521);
   }
-}
+} */
 
 /* For mobile */
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   body {
     background-color: orange;
-  }
+  } */
   .swiper-slide {
     width: 100% !important;
     height: auto !important;
   }
-}
+
 
 /* track order */
 .card {
