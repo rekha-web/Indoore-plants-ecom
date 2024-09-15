@@ -10,3 +10,54 @@
 .footer_wrapper > div {
     padding: 0 1.875rem;
 }
+/* For tablet */
+@media screen and (max-width: 768px) {
+    .font-gondgir{
+        font-size: 32px;
+    }
+    .maintop-btn{
+        padding: 0.25rem 1rem;
+    }
+  }
+  
+  /* For mobile */
+  @media screen and (max-width: 400px) {
+    .font-gondgir{
+        font-size: 20px;
+    }
+    .maintop-btn{
+        padding: 0.125rem 0.5rem;
+    }
+  }
+
+     /* Responsive styles for tablet */
+     @media (max-width: 768px) {
+        .feature_section img {
+          width: 50px;
+        }
+  
+        .font-gondgir{
+            font-size: 32px;
+        }
+  
+        .main-btn{
+          padding: 10px 20px;
+          font-size: 1.2rem;
+        }
+      }
+  
+      /* Responsive styles for mobile */
+      @media (max-width: 360px) {
+          .feature_section img {
+            width: 25px;
+          }
+    
+          .font-gondgir{
+              font-size: 16px;
+          }
+    
+          .main-btn{
+            padding: 5px 10px;
+            font-size: 0.6rem;
+          }
+      }

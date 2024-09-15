@@ -219,26 +219,6 @@ button:hover {
 
 /* Utility Classes end */
 
-/* For responsiveness */
-/* widhth 768px, widht 356px and height 640px */
-/* For tablet */
-/* @media (max-width: 768px) {
-  body {
-    background-color: rgba(128, 0, 128, 0.521);
-  }
-} */
-
-/* For mobile */
-/* @media (max-width: 360px) {
-  body {
-    background-color: orange;
-  } */
-  .swiper-slide {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-
 /* track order */
 .card {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
